@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Loading...</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="bg-intro" loop src="assets/music_intro.mp3"></audio>
+    <audio id="bg-funny" loop src="assets/music_funny.mp3"></audio>
+    <audio id="bg-party" loop src="assets/music_party.mp3"></audio>
+
+    <div class="main-container">
+
+        <section class="slide active" id="slide-1">
+            <div class="glass-card">
+                <h1>⚠ INCOMING MESSAGE ⚠</h1>
+                <p>Before the clock strikes 12...</p>
+                <button onclick="startExperience()">OPEN MESSAGE</button>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-2">
+            <div class="glass-card">
+                <h2>The Prophecy</h2>
+                <div class="media-box">
+                    <video id="memeVideo" loop playsinline>
+                        <source src="assets/intro.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <p class="caption">Listen carefully...</p>
+                <button onclick="nextSlide(2)">BUT WE SURVIVED</button>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-3">
+            <div class="glass-card">
+                <h2>2025 Recap: Chaos</h2>
+                <div class="media-box">
+                    <img src="assets/meme1.jpg" alt="Meme 1">
+                </div>
+                <p class="caption">Can't believe this happened.</p>
+                <button onclick="nextSlide(3)">NEXT MEMORY</button>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-4">
+            <div class="glass-card">
+                <h2>The "Viral" Moment</h2>
+                <div class="media-box">
+                    <img src="assets/meme2.jpg" alt="Meme 2">
+                </div>
+                <p class="caption">Internet was wilding.</p>
+                <button onclick="nextSlide(4)">NEXT</button>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-5">
+            <div class="glass-card">
+                <h2>Just 2025 Things</h2>
+                <div class="media-box">
+                    <img src="assets/meme3.jpg" alt="Meme 3">
+                </div>
+                <p class="caption">Never forget.</p>
+                <button onclick="nextSlide(5)">NEXT</button>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-6">
+            <div class="glass-card">
+                <h2>Goodbye 2025</h2>
+                <div class="media-box">
+                    <img src="assets/meme4.jpg" alt="Meme 4">
+                </div>
+                <p class="caption">Enough sad vibes.</p>
+                <button onclick="nextSlide(6)">SWITCH THE VIBE</button>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-7">
+            <div class="glass-card">
+                <h2>MOCHA ENERGY!</h2>
+                <div class="media-box">
+                    <img src="assets/mocha1.gif" alt="Mocha 1">
+                </div>
+                <p class="caption">Entering 2026 like...</p>
+                <button onclick="nextSlide(7)">KEEP DANCING</button>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-8">
+            <div class="glass-card">
+                <h2>Full Volume!</h2>
+                <div class="media-box">
+                    <img src="assets/mocha2.gif" alt="Mocha 2">
+                </div>
+                <p class="caption">No stress allowed this year.</p>
+                <button onclick="nextSlide(8)">ALMOST THERE</button>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-9">
+            <div class="glass-card">
+                <h2>Are You Ready?</h2>
+                <div class="media-box">
+                    <img src="assets/mocha3.gif" alt="Mocha 3">
+                </div>
+                <p class="caption">3... 2... 1...</p>
+                <button onclick="nextSlide(9)">LAUNCH 2026 🚀</button>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-10">
+            <canvas id="fireworksCanvas"></canvas>
+            <div class="finale-content">
+                <h1 class="neon-title">HAPPY NEW YEAR</h1>
+                <h1 class="neon-year">2026</h1>
+                <p class="caption">"Duniya Khatm Nahi, Shuru Hui Hai"</p>
+                <div class="footer">
+                    Designed by <span id="myName">Abdur Rahman Mallik</span>
+                </div>
+                <button onclick="location.reload()" style="margin-top: 50px;">REPLAY</button>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
